@@ -1,0 +1,81 @@
+@media print {
+	#client-visible {
+		display: none; /* Hide this section when printing */
+	}
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	padding: 20px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+label {
+	font-weight: bold;
+}
+input,
+select,
+label {
+	width: 80vw;
+	margin: auto auto;
+	padding: 5px;
+}
+
+select {
+	margin-bottom: 40px;
+}
+.btn-group {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	width: 80vw;
+	margin: auto auto;
+}
+button:first-child {
+	width: fit-content;
+	padding: 10px;
+	background: rgb(59 130 246);
+	color: white;
+	outline: none;
+	border: none;
+}
+button:first-child:hover {
+	background: rgb(29, 108, 236);
+	cursor: pointer;
+}
+button:last-child {
+	width: fit-content;
+	padding: 10px;
+	background-color: rgb(74 222 128);
+	color: white;
+	outline: none;
+	border: none;
+}
+button:last-child:hover {
+	background-color: rgb(21, 175, 78);
+	cursor: pointer;
+}
+
+.printArea {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: 20px;
+	padding: 10px;
+}
+table {
+  margin: 40px , 0px ;
+	border-collapse: collapse;
+	width: fit-content;
+}
+table tr , table th , table td {
+  border: 2px solid black;
+  padding: 5px 20px;
+}
